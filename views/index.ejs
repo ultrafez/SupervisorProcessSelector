@@ -15,11 +15,27 @@
     <script type="text/javascript">
         $(function() {
             $('.select-process').on('click', function() {
-                console.log($(this).attr('data-process'));
+                var process = $(this).attr('data-process')
+                console.log(process);
+                $.ajax({
+                    url: '/api/start',
+                    type: 'POST',
+                    data: JSON.stringify({
+                        'process': process
+                    }),
+                    contentType: "application/json; charset=utf-8",
+                    dataType: 'json'
+                });
             });
 
             $('.stop-processes').on('click', function() {
-                console.log('stop');
+                $.ajax({
+                    url: '/api/stop',
+                    type: 'POST',
+                    data: JSON.stringify({}),
+                    contentType: "application/json; charset=utf-8",
+                    dataType: 'json'
+                });
             });
         });
     </script>

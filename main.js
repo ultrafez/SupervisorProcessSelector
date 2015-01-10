@@ -44,7 +44,7 @@ apiRouter.post('/start', function (req, res) {
             return res.send({'status': 'error', 'message': 'Supervisor failed to stop processes: ' + err});
         }
 
-        supervisor.startProcess(process, function(err, result) {
+        supervisor.startProcess(config.processGroup + ':' + process, function(err, result) {
             if (err) {
                 return res.send({'status': 'error', 'message': 'Supervisor failed to start process: ' + err});
             }
