@@ -1,0 +1,16 @@
+{
+  "name": "CubeModeControl",
+  "version": "0.0.1",
+  "description": "Start and stop different cube demo modes",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alex Silcock",
+  "license": "GPLv3",
+  "dependencies": {
+    "body-parser": "^1.10.1",
+    "express": "^4.10.7",
+    "supervisord": "0.0.4"
+  }
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cube Mode Selector</title>
+    <style>
+        .select-process, .stop-processes {
+            display: block;
+            width: 100%;
+            height: 30px;
+            margin-bottom: 15px;
+            font-size: 12pt;
+        }
+    </style>
+    <script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('.select-process').on('click', function() {
+                console.log($(this).attr('data-process'));
+            });
+
+            $('.stop-processes').on('click', function() {
+                console.log('stop');
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Cube Mode Selector</h1>
+    <% for (var i=0; i<processes.length; i++) { %>
+        <button class="select-process" data-process="<%= processes[i] %>">Start <%= processes[i] %></button>
+    <% } %>
+    <button class="stop-processes">Stop</button>    
+</body>
+</html>

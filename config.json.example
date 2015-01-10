@@ -1,0 +1,8 @@
+{
+    "processes": [
+        "cubedemo",
+        "cubeinteractive"
+    ],
+    "port": 48004,
+    "supervisorHost": "http://user:pass@localhost:9001"
+}
