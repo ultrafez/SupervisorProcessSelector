@@ -1,10 +1,11 @@
 {
-  "name": "CubeModeControl",
+  "name": "SupervisorProcessSelector",
   "version": "0.0.1",
-  "description": "Start and stop different cube demo modes",
+  "description": "Web UI to start mutually-exclusive Supervisor processes",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js"
   },
   "author": "Alex Silcock",
   "license": "GPLv3",
