@@ -3,6 +3,7 @@
         "cubedemo",
         "cubeinteractive"
     ],
+    "processGroup": "cube",
     "port": 48004,
     "supervisorHost": "http://user:pass@localhost:9001"
 }
